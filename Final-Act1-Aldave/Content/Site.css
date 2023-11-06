@@ -1,0 +1,206 @@
+﻿/* Set padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+/* Set width on the form input elements since they're 100% wide by default */
+* {
+    color: #C6B4B1;
+}
+body {
+    background: linear-gradient(255deg, #682A1D 2.88%, #1E204E 98.42%);
+    height: 100vh;
+}
+.nav {
+    background: rgba(255, 255, 255, 0.05);
+    align-content: center;
+    padding: 10px 8rem 0 8rem;
+    height: 5rem;
+    justify-content: space-between;
+    backdrop-filter: blur(25px);
+    position: sticky;
+    top: 0;
+}
+li {
+    list-style-type: none;
+}
+.nav-link {
+    color: #C6B4B1;
+}
+.nav-link:hover {
+    color: #ffe4d9;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+}
+#get-started-btn {
+    padding: 0 10px 2px 10px;
+    height: 2.5rem;
+    border-style: none;
+    margin: 2px 0 0 0;
+    color: #C6B4B1;
+    background-color: #621D18;
+    font-size: 14px;
+    width: 7rem;
+    border-radius: 7px;
+    padding: 1px 0 0 0;
+}
+#learn-more-btn {
+    border-style: none;
+    width: 9rem;
+    height: 2.5rem;
+    background: none;
+    color: #C6B4B1;
+}
+i {
+    margin-left: 13px;
+    color: #C6B4B1;
+}
+#purchase-btn {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-style: none;
+    width: 7rem;
+    height: 2.5rem;
+    color: #C6B4B1;
+    padding: 0 0 3px 0;
+}
+footer {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(25px);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 7rem 0 7rem;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.social-media {
+    margin: 0 0 8px 0;
+}
+.social-media i {
+    padding: 8px;
+}
+.purchase-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 10rem 0 0;
+}
+.home-layout {
+    display: flex;
+    flex-direction: row;
+}
+#home-img {
+    width: 220%;
+    height: auto;
+    margin: 4rem 0 0 0;
+}
+.home-content {
+    margin: 8rem 0 0 30rem;
+}
+#purchase-img {
+    width: 24rem;
+    height: 34rem;
+}
+#purchase-glow {
+    border-radius: 1313px;
+    background: radial-gradient(54.38% 54.38% at 50% 50%, rgba(255, 45, 0, 0.59) 0%, rgba(45, 34, 68, 0.00) 100%);
+    width: 50rem;
+    height: 50rem;
+    z-index: -1;
+    position: fixed;
+    right: 9rem;
+    top: 1rem;
+}
+#home-glow {
+    border-radius: 1313px;
+    background: radial-gradient(54.38% 54.38% at 50% 50%, rgba(255, 45, 0, 0.59) 
+    0%, rgba(45, 34, 68, 0.00) 100%);
+    width: 70rem;
+    height: 70rem;
+    z-index: -1;
+    position: fixed;
+    right: 36rem;
+    top: -7rem;
+}
+.card-1, .card-2, .card-3 {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(25px);
+    height: 29rem;
+    width: 25rem;
+    border-radius: 10px;
+}
+.dashboard-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card1-content,.card2-content, .card3-content {
+    margin: 2rem;
+}
+#card1-img, #card3-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+#card2-img {
+    width: 100%;
+    height: 14.5rem;
+    border-radius: 10px 10px 0 0;
+}
+#dashboard-glow {
+    border-radius: 1313px;
+    background: radial-gradient(54.38% 54.38% at 50% 50%, rgba(255, 45, 0, 0.59) 
+    0%, rgba(45, 34, 68, 0.00) 100%);
+    width: 70rem;
+    height: 70rem;
+    z-index: -1;
+    position: fixed;
+    right: 17rem;
+    top: 15rem;
+}
+#inquiry-form {
+    display: flex;
+    flex-direction: column;
+}
+.inquiry-layout {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(25px);
+    height: 35rem;
+    width: 28rem;
+    border-radius: 10px;
+    padding: 3rem;
+    margin:3.5rem 0 0 26rem;
+}
+input, textarea {
+    height: 2.5rem;
+    margin-bottom: 10px;
+    background: none;
+    border: solid 1px;
+    border-radius: 7px;
+    padding: 0 0 0 15px;
+    width: 22rem;
+}
+textarea{
+    height: 9rem;
+}
+input[type="submit"] {
+    color: #C6B4B1;
+    background-color: #621D18;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/Site.css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="https://kit.fontawesome.com/1beb5182c0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="nav">
+        <h2>JMA</h2>
+            <ul>
+                <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Dashboard", "Dashboard", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Inquiry", "Inquiry", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("Purchase", "Purchase", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+            </ul>
+        <button id="get-started-btn">Get Started</button>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <footer>
+            <p>
+                &copy; @DateTime.Now.Year - My ASP.NET Application &nbsp;&nbsp;&nbsp;<u>Privacy Policy</u>&nbsp;&nbsp;&nbsp;
+                <u>Terms and Services</u>&nbsp;&nbsp;&nbsp;<u>Cookie Settings</u>
+            </p>
+            <div class="social-media">  
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
